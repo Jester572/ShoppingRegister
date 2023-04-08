@@ -1,38 +1,39 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
 
-{Provide a description of the software that you wrote and how it integrates with a Cloud Database. Describe how to use your program.}
+The shopping_tickets program is a program written in python that implements the Fire Store cloud database. When you run the program, it will allow you to interact with the main menu to choose from 1 of six options.
+- Option 1: Add Ticket- Creates a ticket that is stored in the database
+- Option 2: Display all tickets- Prints out a list of all the tickets and all their information
+- Option 3: Delete a ticket- This deletes a ticket by ticket number
+- Option 4: Daily Sales- Provides and creates a daily report on all tickets created separating each by the date
+- Option 5: Quit- Exits out of the program
 
-{Describe your purpose for writing this software.}
+This program was written to keep track of the amount of inventory that leaves a store. It also provides an automatic daily report. 
 
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/AlcRVNi2wDQ)
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
+Cloud Fire Store
 
-{Describe the structure of the database that you created.}
+The Database consists of two tables. The first table stores all the tickets in it, and each ticket stores the ticket information which is sorted by its ticket number. The second table holds the Daily Reports. The daily reports are organized by its date and stores the number of items sold, total sales, total tickets.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Visual Studio Code
 
-{Describe the programming language that you used and any libraries.}
+Programming Language: Python
+Libraries: time,  datetime, firebase_admin
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [Firebase Firestore](https://firebase.google.com/docs/firestore/)
+- [Python Firebase SDK Integration With Real Time Database](https://www.youtube.com/watch?v=EiddkXBK0-o&t=120s)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Create a monthly report
+- Create and implement a better GUI
+- Make it so you can add more than one item per ticket.
