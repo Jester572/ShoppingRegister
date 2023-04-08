@@ -13,51 +13,51 @@ ticket_book = db.collection('Ticket Book')
 sales_report = db.collection('Daily Sales')
 
 # test data
-ticket_book.document("3").set({
-        'ticket_num': "3",
-        'date': "2023-04-08",
-        'time': "17:07:30",
-        'item': "Baby Bibs",
-        'quantity': '34',
-        'total_price': "1.50",
-        'notes': "ticket.notes"
-    })
-ticket_book.document("4").set({
-        'ticket_num': "4",
-        'date': "2023-04-08",
-        'time': "17:07:30",
-        'item': "Charging Cords",
-        'quantity': '7',
-        'total_price': "1.50",
-        'notes': "ticket.notes"
-    })
-ticket_book.document("5").set({
-        'ticket_num': "5",
-        'date': "2023-04-08",
-        'time': "17:07:30",
-        'item': "Television",
-        'quantity': '1',
-        'total_price': "1500",
-        'notes': "ticket.notes"
-    })
-ticket_book.document("6").set({
-        'ticket_num': "6",
-        'date': "2023-04-09",
-        'time': "17:07:30",
-        'item': "Picture Fram",
-        'quantity': '16',
-        'total_price': "5",
-        'notes': "ticket.notes"
-    })
-ticket_book.document("7").set({
-        'ticket_num': "7",
-        'date': "2023-04-09",
-        'time': "17:07:30",
-        'item': "Radio",
-        'quantity': '3',
-        'total_price': "25.99",
-        'notes': "ticket.notes"
-    })
+# ticket_book.document("3").set({
+#         'ticket_num': "3",
+#         'date': "2023-04-08",
+#         'time': "17:07:30",
+#         'item': "Baby Bibs",
+#         'quantity': '34',
+#         'total_price': "1.50",
+#         'notes': "ticket.notes"
+#     })
+# ticket_book.document("4").set({
+#         'ticket_num': "4",
+#         'date': "2023-04-08",
+#         'time': "17:07:30",
+#         'item': "Charging Cords",
+#         'quantity': '7',
+#         'total_price': "1.50",
+#         'notes': "ticket.notes"
+#     })
+# ticket_book.document("5").set({
+#         'ticket_num': "5",
+#         'date': "2023-04-08",
+#         'time': "17:07:30",
+#         'item': "Television",
+#         'quantity': '1',
+#         'total_price': "1500",
+#         'notes': "ticket.notes"
+#     })
+# ticket_book.document("6").set({
+#         'ticket_num': "6",
+#         'date': "2023-04-09",
+#         'time': "17:07:30",
+#         'item': "Picture Fram",
+#         'quantity': '16',
+#         'total_price': "5",
+#         'notes': "ticket.notes"
+#     })
+# ticket_book.document("7").set({
+#         'ticket_num': "7",
+#         'date': "2023-04-09",
+#         'time': "17:07:30",
+#         'item': "Radio",
+#         'quantity': '3',
+#         'total_price': "25.99",
+#         'notes': "ticket.notes"
+#     })
         
 class Ticket:
     def __init__(self,item,quantity,notes):
